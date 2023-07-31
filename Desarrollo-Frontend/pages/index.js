@@ -19,7 +19,15 @@ const Menu = (props) => {
           <meta property="og:title" content="Menu - TPI - Frontend" />
         </Head>
         <Cabecera rootClassName="cabecera-root-class-name1"></Cabecera>
+        <div>
+            <h2 >Bienvenidos al Bar de Pedro</h2>
+            <p >
+                Ésta a punto de ingresar a la pagina de compra y venta de productos de la cantidad de 
+                <span > Facultad Regional Resistencia</span>, 
+                por favor indique que desea realizar primero.</p>
+        </div>
         <div className="menu-container1">
+           
           <div className="menu-section">
             <button
               id="botonNuevaVenta"
@@ -40,8 +48,11 @@ const Menu = (props) => {
               <span className="menu-button-text">Nueva compra</span>
             </button>
           </div>
+          
         </div>
-
+        <div>
+            <img src={process.env.PUBLIC_URL + '/Desarrollo-Frontend/public/fondo1.jpg'}/>
+          </div>
         {
               showAddVentas? <AgregarVenta update={()=>{}}></AgregarVenta>: null
         }

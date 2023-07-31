@@ -7,20 +7,19 @@ const Cabecera = (props) => {
   return (
     <>
       <div className={`cabecera-container ${props.rootClassName} `}>
-        <div className="header-logo-pedro">
+        
+        <div className="header-nav">
+        
         <Link href="/">
-            <a>
+            <a className="header-nav-pedro">
               <img
                 id="logoHorizontal"
-                alt={props.image_alt}
+                alt="logo"
                 src="/pedro_s.-logo.png"
                 className="header-logo"
               />
             </a>
           </Link>
-         
-        </div>
-        <div className="header-nav">
           
           <Link href="/" name="botonInicio">
             <a className="header-nav-button button">{props.button2}</a>
@@ -48,6 +47,7 @@ const Cabecera = (props) => {
             align-items: center;
             flex-direction: column;
             justify-content: flex-start;
+            font-weight: bold;
           }
         `}
       </style>

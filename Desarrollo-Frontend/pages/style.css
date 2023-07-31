@@ -27,7 +27,7 @@
   --dl-color-color-negro2: #20201eff;
   --dl-color-paleta-light: #f1f6f9ff;
   --dl-size-size-maxwidth: 1400px;
-  --dl-color-blue-dark: #0000FF;
+  --dl-color-blue-dark: #000000;
   --dl-radius-radius-round: 50%;
   --dl-color-paleta-fonardo: #d9d9d9ff;
   --dl-space-space-halfunit: 8px;
@@ -454,95 +454,14 @@ select{
   transform: scale(1.05);
 }
 .text-total {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: Poppins;
   margin-left: 2.8rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.login-logo {
-  width: 22rem;
-  margin-top: 0rem;
-  object-fit: cover;
-}
-.login-main {
-  flex: 0 0 auto;
-  display: flex;
-  padding: 1rem;
-  align-items: flex-start;
-  border-radius: 3rem;
-  flex-direction: column;
-  background-color: var(--dl-color-gray-white);
-}
-.login-header {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  flex-direction: row;
-}
-.login-form {
-  flex: 0 0 auto;
-  width: 30rem;
-  height: 100%;
-  display: flex;
-  padding: 0rem;
-  align-self: center;
-  align-items: flex-start;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  border-radius: 1rem;
-  flex-direction: column;
-  background-color: var(--dl-color-gray-white);
-}
-.login-form-title {
-  color: var(--dl-color-blue-dark);
-  font-size: 1.5rem;
-  align-self: center;
-  font-style: normal;
-  margin-top: 2rem;
-  font-family: Poppins;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-.login-input {
-  width: 22rem;
-  height: 42px;
-  font-size: 1rem;
-  align-self: center;
-  margin-top: 0rem;
-  text-align: left;
-  transition: 0.3s;
-  font-family: Poppins;
-  border-color: var(--dl-color-gray-700);
-  border-radius: 2rem;
-  margin-bottom: 2rem;
-}
-.login-button {
-  color: var(--dl-color-color-blanco);
-  width: 10rem;
-  height: 3rem;
-  padding: 1rem;
-  font-size: 1.1rem;
-  align-self: center;
-  font-style: normal;
-  transition: 0.3s;
-  font-family: Poppins;
-  font-weight: 600;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #000000;
-}
-.login-button:hover {
-  cursor: pointer;
-  background-color: var(--dl-color-blue-dark);
-}
+
+
 .menu-section-img {
   width: 10rem;
   margin-top: 2rem;
@@ -552,10 +471,8 @@ select{
   margin-bottom: 2rem;
 }
 .menu-button {
-  width: auto;
-  height: auto;
+  
   padding: 1rem;
-  position: relative;
   align-self: center;
   margin-top: 0rem;
   transition: 0.3s;
@@ -564,12 +481,12 @@ select{
   margin-right: 1rem;
   border-radius: 0.3rem;
   margin-bottom: 0rem;
-  background-color: var(--dl-color-blue-dark);
+  background-color: rgb(17 24 39);
+  display: block
 }
 .menu-button:hover {
   width: auto;
-  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.6);
-  background-color: var(--dl-color-blue-dark);
+  background-color: rgb(31 41 55);
 }
 .reporte-main {
   width: 1000px;
@@ -879,7 +796,7 @@ select{
   flex-direction: column;
 }
 .menu-button-icon {
-  width: 2rem;
+  
   height: auto;
   margin-top: 0rem;
   object-fit: cover;
@@ -888,14 +805,14 @@ select{
   margin-bottom: 0rem;
 }
 .menu-button-text {
-  color: var(--dl-color-gray);
-  font-size: 1.5rem;
+  color: white;
+  font-size: 1rem;
   font-style: normal;
   margin-top: 0rem;
   font-family: Poppins;
   font-weight: 600;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
   margin-bottom: 0rem;
 }
 .agregarVenta-main {
@@ -1078,7 +995,7 @@ select{
     width: 1rem;
   }
   .menu-button-text {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
 @media(max-width: 767px) {
