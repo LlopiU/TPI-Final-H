@@ -157,7 +157,7 @@ const EditarCompra = (props) => {
             align-self: center;
             border-radius: 3rem;
             flex-direction: column;
-            background-color: var(--dl-color-color-blanco);
+            background-color: var(--dl-color-indigo-600);
             border-top-left-radius: 0;
             border-top-right-radius: 0;
           }
@@ -184,7 +184,7 @@ const EditarCompra = (props) => {
             padding-right: 2rem;
             padding-bottom: 1rem;
             justify-content: flex-start;
-            background-color: var(--dl-color-color-naranja);
+            background-color: var(--dl-color-indigo-600);
           }
           .editar-compra-text01 {
             color: var(--dl-color-gray-white);
@@ -269,7 +269,7 @@ const EditarCompra = (props) => {
             margin-right: 0rem;
             border-radius: 2rem;
             justify-content: flex-end;
-            background-color: var(--dl-color-color-naranja);
+            background-color: var(--dl-color-indigo-600);
           }
           .editar-compra-btn-delete:hover {
             transform: scale(1.05);

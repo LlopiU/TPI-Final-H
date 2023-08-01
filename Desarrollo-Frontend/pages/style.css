@@ -95,7 +95,7 @@
   --dl-color-danger-300: #A22020;
   --dl-color-danger-500: #BF2626;
   --dl-color-danger-700: #E14747;
-  --dl-color-gray:#28282A;
+  --dl-color-gray-black: #000000;
   --dl-color-gray-white: #FFFFFF;
   --dl-size-size-medium: 96px;
   --dl-size-size-xlarge: 192px;
@@ -115,15 +115,15 @@
   --dl-color-color-negro2: #20201eff;
   --dl-color-paleta-light: #f1f6f9ff;
   --dl-size-size-maxwidth: 1400px;
-  --dl-color-color-naranja: #e3b04bff;
-  --dl-radius-radius-round: 50%;
+  --dl-color-color-naranja: rgb(63, 173, 149);
+  --dl-radius-radius-round: 0%;
   --dl-color-paleta-fonardo: #d9d9d9ff;
   --dl-space-space-halfunit: 8px;
   --dl-space-space-sixunits: 96px;
   --dl-space-space-twounits: 32px;
-  --dl-radius-radius-radius2: 2px;
-  --dl-radius-radius-radius4: 4px;
-  --dl-radius-radius-radius8: 8px;
+  --dl-radius-radius-radius2: 0px;
+  --dl-radius-radius-radius4: 0px;
+  --dl-radius-radius-radius8: 0px;
   --dl-space-space-fiveunits: 80px;
   --dl-space-space-fourunits: 64px;
   --dl-space-space-threeunits: 48px;
@@ -161,16 +161,19 @@ select{
 .input:focus {
   border-color: var(--dl-color-color-naranja);
 }
-
+.input:hover {
+  transition: 0.3s;
+  border-color: var(--dl-color-color-naranja);
+}
 .input:focus-visible {
   outline: none;
 }
 .textarea {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   cursor: auto;
   resize: none;
   padding: 0.5rem;
-  border-color: var(--dl-color-gray);
+  border-color: var(--dl-color-gray-black);
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
@@ -398,9 +401,9 @@ select{
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--dl-color-gray);
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
+  background-color: var(--dl-color-gray-black);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .popup-header-title {
   color: var(--dl-color-gray-white);
@@ -419,11 +422,11 @@ select{
   margin-top: 0rem;
   margin-left: 0rem;
   margin-right: 0rem;
-  border-radius: 2rem;
+  border-radius: 3px;
   margin-bottom: 0rem;
 }
 .popup-searchbar-label {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   font-size: 1.5rem;
   align-self: center;
   font-style: normal;
@@ -463,9 +466,9 @@ select{
   flex-direction: row;
   padding-bottom: 0rem;
   justify-content: space-between;
-  background-color: var(--dl-color-gray);
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
+  background-color: var(--dl-color-gray-black);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .popup-list-row {
   flex: 1;
@@ -473,7 +476,7 @@ select{
   display: flex;
   align-self: stretch;
   align-items: flex-end;
-  border-radius: 2rem;
+  border-radius: 5px;
   flex-direction: column;
   justify-content: center;
   background-color: var(--dl-color-color-negro);
@@ -531,10 +534,10 @@ select{
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  border-radius: 2rem;
+  border-radius: 3px;
   padding-right: 1rem;
   justify-content: center;
-  background-color: var(--dl-color-gray);
+  background-color: var(--dl-color-gray-black);
 }
 
 .buttonTransScale:hover {
@@ -706,7 +709,7 @@ select{
   align-self: flex-start;
   align-items: center;
   padding-top: 0rem;
-  border-color: var(--dl-color-gray);
+  border-color: var(--dl-color-gray-black);
   flex-direction: row;
   padding-bottom: 0rem;
   justify-content: space-between;
@@ -781,7 +784,7 @@ select{
   padding: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
   align-items: center;
-  border-color: var(--dl-color-gray);
+  border-color: var(--dl-color-gray-black);
   border-radius: 0px;
   margin-bottom: 0px;
   justify-content: space-between;
@@ -813,7 +816,7 @@ select{
   border-bottom-right-radius: 0;
 }
 .reporte-fila-id {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   width: 8rem;
   font-size: 1.2rem;
   align-self: center;
@@ -825,7 +828,7 @@ select{
   margin-right: 1rem;
 }
 .reporte-fila-fecha {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   width: 10rem;
   height: auto;
   font-size: 1.2rem;
@@ -837,7 +840,7 @@ select{
   margin-right: 1rem;
 }
 .reporte-fila-cliente {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   width: 15rem;
   font-size: 1.2rem;
   font-style: normal;
@@ -848,7 +851,7 @@ select{
   margin-right: 1rem;
 }
 .reporte-fila-importe {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   width: 5rem;
   font-size: 1.2rem;
   font-style: normal;
@@ -890,7 +893,28 @@ select{
   text-decoration: none;
   background-color: transparent;
 }
-
+.header-nav-button:hover {
+  color: var(--dl-color-color-naranja);
+  transform: scale(1.05);
+  background-color: transparent;
+}
+.header-logout-button {
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  border-width: 0px;
+  margin-right: 2rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-decoration: none;
+  background-color: transparent;
+}
+.header-logout-button:hover {
+  transform: scale(1.1);
+}
 .header-top {
   flex: 0 0 auto;
   width: 100%;
@@ -908,27 +932,14 @@ select{
   margin-top: 0rem;
   align-items: center;
   margin-bottom: 0rem;
-  justify-content: right;
-  background-color: var(--dl-color-gray);
-}
-.header-logo-pedro {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  margin-top: 0rem;
-  align-items: center;
-  margin-bottom: 0rem;
-  justify-content: left;
-  background-color: var(--dl-color-gray);
+  justify-content: center;
+  background-color: var(--dl-color-gray-black);
 }
 .header-logo {
-  width: 10rem;
+  width: 20rem;
   margin: 0rem;
   object-fit: cover;
   text-decoration: none;
-  justify-content: left;
-  left:0px;
 }
 .header-logout-text {
   font-size: 1.2rem;
@@ -976,7 +987,7 @@ select{
   margin-bottom: 0rem;
 }
 .menu-button-text {
-  color: var(--dl-color-gray);
+  color: var(--dl-color-gray-black);
   font-size: 1.5rem;
   font-style: normal;
   margin-top: 0rem;
@@ -1004,7 +1015,7 @@ select{
   height: auto;
   display: flex;
   padding: 2rem;
-  border-radius: 3rem;
+  border-radius: 5px;
   flex-direction: column;
   background-color: var(--dl-color-color-blanco);
   border-top-left-radius: 0;
@@ -1306,12 +1317,12 @@ select{
     font-size: 1rem;
   }
   .popup-list-header {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
   }
   .popup-list-row {
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .list-header-col-productos {
     margin: 0;
@@ -1460,8 +1471,8 @@ select{
   }
   .agregarVenta-content {
     padding: 1rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   .agregarVenta-content-header {
     margin-top: 0rem;

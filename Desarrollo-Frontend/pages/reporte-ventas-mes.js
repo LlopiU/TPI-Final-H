@@ -99,52 +99,52 @@ const ReporteVentasMes = (props) => {
   
   return (
     <>
-      <div className="reporte-ventas-container bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen flex items-center justify-center">
+      <div className="bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen flex items-center justify-center">
         <Head>
           <title>Reporte de ventas - Pedro's Bar</title>
           <meta property="og:title" content="Reporte-Ventas - TPI - Frontend" />
         </Head>
-        <div className="reporte-main bg-white shadow-xl rounded-lg p-8 w-full max-w-4xl">
-          <div className="reporte-header flex items-center justify-between mb-6">
+        <div className="bg-white shadow-xl rounded-lg p-8 w-full max-w-4xl">
+          <div className="flex items-center justify-between mb-4">
             <img
               alt="Logo"
               src="./Logo-reporte.png"
-              className="reporte-logo h-16"
+              className="h-16"
             />
-            <span className="reporte-fecha text-gray-600">{getFechaActual()}</span>
+            <span className="text-sm text-gray-800">
+              {getFechaActual()}
+            </span>
           </div>
-          <div className="reporte-title mb-6">
-            <h1 className="reporte-title-h1 text-4xl font-bold mb-2 text-gray-800">
-              Reporte de ventas del mes {router.query.mes}/{router.query.anio}
+          <div className="mb-6">
+            <h1 className="text-2xl font-bold mb-2 text-gray-800">
+              Reporte de Ventas del Mes {router.query.mes}/{router.query.anio}
             </h1>
           </div>
-          <div className="reporte-list">
-            <div className="reporte-list-header grid grid-cols-4 gap-4 text-center font-bold mb-4">
-              <span className="text-gray-800">ID</span>
-              <span className="text-gray-800">Fecha</span>
-              <span className="text-gray-800">Cliente</span>
-              <span className="text-gray-800">Importe</span>
-            </div>
-            <div className="reporte-content">
-              {ventas.map((venta, index) => (
-                <LineaReporte
-                  key={index}
-                  id={venta.id}
-                  fecha={venta.fecha}
-                  cliente={venta.cliente}
-                  importe={venta.importe} // Asigna el importe de la venta si está disponible
-                />
-              ))}
-            </div>
+          <div className="grid grid-cols-4 gap-4 text-center font-bold mb-4">
+            <span className="text-gray-800">ID</span>
+            <span className="text-gray-800">Fecha</span>
+            <span className="text-gray-800">Cliente</span>
+            <span className="text-gray-800">Importe</span>
           </div>
-          <div className="reporte-totales mt-6">
-            <span className="text-total font-bold text-xl text-gray-800">
+          <div className="grid gap-4">
+            {ventas.map((venta, index) => (
+              <LineaReporte
+                key={index}
+                id={venta.id}
+                fecha={venta.fecha}
+                cliente={venta.cliente}
+                importe={venta.importe}
+              />
+            ))}
+          </div>
+          <div className="mt-6 ml-2">
+            <span className="text-total font-bold text-lg text-gray-800 block">
               Total Vendido: ${totalVendido.toFixed(2)}
             </span>
-            <span className="text-total font-bold text-xl text-gray-800">
+            <span className="text-total font-bold text-lg text-gray-800 block">
               Costo mercadería vendida: ${costoMercaderia.toFixed(2)}
             </span>
-            <span className="reporte-ventas-text7 text-total font-bold text-xl text-gray-800">
+            <span className="text-total font-bold text-lg text-gray-800 block">
               Margen de ganancia: ${margenGanancia.toFixed(2)}
             </span>
           </div>
@@ -152,6 +152,7 @@ const ReporteVentasMes = (props) => {
       </div>
     </>
   );
+  
 };
 
 export default ReporteVentasMes;

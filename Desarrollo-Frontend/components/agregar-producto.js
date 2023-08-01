@@ -33,39 +33,24 @@ const AgregarProducto = (props) => {
       });
   };
   const handleKeyDown = (event) => {
-    const maxLength = 3; // Establece la longitud máxima permitida
+    const maxLength = 3; 
 
     if (event.target.value.length >= maxLength) {
-      event.preventDefault(); // Previene la entrada de más dígitos
+      event.preventDefault(); 
     }
   };
   const handleKeyDown2 = (event) => {
-    const maxLength = 5; // Establece la longitud máxima permitida
+    const maxLength = 5;
 
     if (event.target.value.length >= maxLength) {
-      event.preventDefault(); // Previene la entrada de más dígitos
+      event.preventDefault(); 
     }
   };
   return (
     <>
       <div className="agregar-producto-container">
-        <div className="agregar-producto-container01">
-          <div className="agregar-producto-container02">
-            <div className="agregar-producto-container03">
-              <button
-                id="btnVolver"
-                className="agregar-producto-btn-delete btnRounded"
-                onClick={() => {
-                  setShowAddProductos(false);
-                }}
-              >
-                <img
-                  src="/back-white-1500h.png"
-                  className="agregar-producto-image"
-                />
-              </button>
-            </div>
-          </div>
+        <div className="">
+          
           <div className="agregar-producto-container06">
             <div className="agregar-producto-encabezado">
               <div className="agregar-producto-container07">
@@ -151,43 +136,30 @@ const AgregarProducto = (props) => {
                     />
                   </div>
                 </div>
+                <div className="agregar-producto-container16" >
+            <a className="boton mt-8 mr-4 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" onClick={() => {
+              setShowAddProductos(false);
+            }}>Cancelar</a>
+
+            <a className="boton mt-8 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" onClick={() => {
+              addProducto();
+              setShowAddProductos(false);
+              props.update();
+            }}>Aceptar</a>
+          </div>
               </div>
+             
             </div>
           </div>
-          <div className="agregar-producto-container16">
-            <button
-              id="btnCancelar"
-              className="agregar-producto-button button"
-              onClick={() => {
-                setShowAddProductos(false);
-              }}
-            >
-              <img
-                src="/cerrar-white-1500h.png"
-                alt="image"
-                className="agregar-producto-image2"
-              />
-            </button>
-            <button
-              id="btnAgregar"
-              className="agregar-producto-button1 button"
-              onClick={() => {
-                addProducto();
-                setShowAddProductos(false);
-                props.update();
-              }}
-            >
-              <img
-                src="/tick-1500h.png"
-                alt="image"
-                className="agregar-producto-image3"
-              />
-            </button>
-          </div>
+          
+
         </div>
       </div>
       <style jsx>
         {`
+          .boton{
+            margin: 10px;
+           }
           .agregar-producto-container {
             width: 100vw;
             height: 100vh;
@@ -200,28 +172,7 @@ const AgregarProducto = (props) => {
             justify-content: center;
             background-color: rgba(43, 43, 40, 0.5);
           }
-          .agregar-producto-container01 {
-            width: 100%;
-            height: auto;
-            display: flex;
-            padding: 2rem;
-            position: relative;
-            max-width: 1000px;
-            border-radius: 3rem;
-            flex-direction: column;
-            background-color: var(--dl-color-color-blanco);
-          }
-          .agregar-producto-container02 {
-            flex: 0 0 auto;
-            width: 100%;
-            height: auto;
-            display: flex;
-            padding: 1rem;
-            align-items: stretch;
-            border-radius: var(--dl-radius-radius-radius8);
-            flex-direction: row;
-            justify-content: space-between;
-          }
+          
           .agregar-producto-container03 {
             flex: 0 0 auto;
             width: auto;
@@ -232,15 +183,13 @@ const AgregarProducto = (props) => {
             justify-content: space-between;
           }
           .agregar-producto-btn-delete {
-            width: 3rem;
-            height: 3rem;
+            width: auto;
+            height: auto;
             align-self: center;
             box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0);
-            transition: 0.3s;
-            align-items: center;
             margin-left: 0rem;
             margin-right: 0rem;
-            border-radius: 2rem;
+            border-radius: 3px;
             justify-content: flex-end;
             background-color: var(--dl-color-color-naranja);
           }
@@ -248,8 +197,8 @@ const AgregarProducto = (props) => {
             transform: scale(1.05);
           }
           .agregar-producto-image {
-            width: 2rem;
-            height: 2rem;
+            width: auto;
+            height: auto;
             object-fit: cover;
           }
           .agregar-producto-container04 {
@@ -576,8 +525,8 @@ const AgregarProducto = (props) => {
           }
           .agregar-producto-button {
             color: var(--dl-color-gray-white);
-            width: 3rem;
-            height: 3rem;
+            width: auto;
+            height: auto;
             font-style: normal;
             transition: 0.3s;
             font-family: Poppins;
@@ -600,8 +549,8 @@ const AgregarProducto = (props) => {
           }
           .agregar-producto-button1 {
             color: var(--dl-color-gray-white);
-            width: 3rem;
-            height: 3rem;
+            width: auto;
+            height: auto;
             font-style: normal;
             transition: 0.3s;
             font-family: Poppins;

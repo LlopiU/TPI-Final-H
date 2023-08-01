@@ -99,16 +99,6 @@ const DetallesCompra = (props) => {
                   <br></br>
                 </span>
               </div>
-              {/* <button
-                id="botonEditarVenta"
-                className="detalles-compra-btn-delete btnRounded"
-              >
-                <img
-                  alt={props.image_alt81}
-                  src={props.image_src81}
-                  className="detalles-compra-image1"
-                />
-              </button> */}
             </div>
             <div className="detalles-compra-lista">
               <div className="detalles-compra-encabezado popup-list-header">
@@ -205,8 +195,8 @@ const DetallesCompra = (props) => {
             border-radius: 3rem;
             flex-direction: column;
             background-color: var(--dl-color-color-blanco);
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
           }
           .detalles-compra-container04 {
             display: flex;
@@ -227,11 +217,11 @@ const DetallesCompra = (props) => {
             padding-top: 1rem;
             margin-right: 0rem;
             padding-left: 2rem;
-            border-radius: 2rem;
+            border-radius: 5px;
             padding-right: 2rem;
             padding-bottom: 1rem;
             justify-content: flex-start;
-            background-color: var(--dl-color-color-naranja);
+            background-color: var(--dl-color-indigo-600);
           }
           .detalles-compra-text01 {
             color: var(--dl-color-gray-white);
@@ -337,8 +327,8 @@ const DetallesCompra = (props) => {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
           }
           .detalles-compra-text22 {
             font-style: normal;

@@ -11,6 +11,7 @@ const Cabecera = () => {
           </a>
         </Link>
         <ul className="items-center justify-end pr-8">
+          
           <li className="pr-4">
             <Link href="/">
               <a>Inicio</a>
@@ -31,6 +32,7 @@ const Cabecera = () => {
               <a>Productos</a>
             </Link>
           </li>
+          
         </ul>
       </nav>
     </>

@@ -106,16 +106,6 @@ const DetallesVenta = (props) => {
                   <br></br>
                 </span>
               </div>
-              {/* <button
-                id="botonEditarVenta"
-                className="detalles-venta-btn-delete btnRounded"
-              >
-                <img
-                  alt={props.image_alt81}
-                  src="/editar-white-1500h.png"
-                  className="detalles-venta-image1"
-                />
-              </button> */}
             </div>
             <div className="detalles-venta-lista">
               <div className="detalles-venta-encabezado popup-list-header">
@@ -207,7 +197,7 @@ const DetallesVenta = (props) => {
             display: flex;
             padding: 2rem;
             align-self: center;
-            border-radius: 3rem;
+            border-radius: 5px;
             flex-direction: column;
             background-color: var(--dl-color-color-blanco);
             border-top-left-radius: 0;
@@ -232,14 +222,13 @@ const DetallesVenta = (props) => {
             padding-top: 1rem;
             margin-right: 0rem;
             padding-left: 2rem;
-            border-radius: 2rem;
+            border-radius: 3px;
             padding-right: 2rem;
             padding-bottom: 1rem;
             justify-content: flex-start;
-            background-color: var(--dl-color-color-naranja);
           }
           .detalles-venta-text01 {
-            color: var(--dl-color-gray-white);
+            color: var(--dl-color-color-negro2);
             font-size: 1.2rem;
             align-self: center;
             margin-top: 0rem;
@@ -252,7 +241,7 @@ const DetallesVenta = (props) => {
             font-weight: 700;
           }
           .detalles-venta-text05 {
-            color: var(--dl-color-gray-white);
+            color: var(--dl-color-color-negro2);
             font-size: 1.2rem;
             align-self: center;
             margin-top: 0rem;
@@ -261,7 +250,7 @@ const DetallesVenta = (props) => {
             margin-right: 2rem;
           }
           .detalles-venta-text08 {
-            color: var(--dl-color-gray-white);
+            color: var(--dl-color-color-negro2);
             font-size: 1.2rem;
             align-self: center;
             margin-top: 0rem;
@@ -274,7 +263,7 @@ const DetallesVenta = (props) => {
             font-weight: 700;
           }
           .detalles-venta-text12 {
-            color: var(--dl-color-gray-white);
+            color: var(--dl-color-color-negro2);
             font-size: 1.2rem;
             align-self: center;
             margin-top: 0rem;
@@ -283,7 +272,7 @@ const DetallesVenta = (props) => {
             margin-right: 2rem;
           }
           .detalles-venta-text15 {
-            color: var(--dl-color-gray-white);
+            color: var(--dl-color-color-negro2);
             width: auto;
             font-size: 1.2rem;
             align-self: center;
@@ -297,7 +286,7 @@ const DetallesVenta = (props) => {
             font-weight: 700;
           }
           .detalles-venta-text19 {
-            color: var(--dl-color-gray-white);
+            color: var(--dl-color-color-negro2);
             width: auto;
             font-size: 1.2rem;
             align-self: center;

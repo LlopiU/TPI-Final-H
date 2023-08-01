@@ -42,7 +42,7 @@ const Menu = (props) => {
                 Ésta a punto de ingresar a la pagina de compra y venta de productos de la cantidad de 
                 <span className="text-indigo-600"> Facultad Regional Resistencia</span>, 
                 por favor indique que desea realizar primero.</p>
-                <a className="mt-8 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" onClick={()=>{setShowAddCompras(true)}}>Nueva comprar</a> 
+                <a className="mt-8 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" onClick={()=>{setShowAddCompras(true)}}>Nueva compra</a> 
                 <a className="ml-4 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" onClick={()=>{setShowAddVentas(true)}}>Nueva venta</a> 
         </div>
     </div>

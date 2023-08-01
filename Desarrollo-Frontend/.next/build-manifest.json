@@ -35,6 +35,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/compras.js"
     ],
+    "/productos": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/productos.js"
+    ],
     "/ventas": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

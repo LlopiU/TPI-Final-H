@@ -70,8 +70,8 @@ const Compra = (props) => {
             align-self: center;
             align-items: center;
             justify-content: flex-start;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
           }
           .compra-text {
             color: var(--dl-color-gray-white);

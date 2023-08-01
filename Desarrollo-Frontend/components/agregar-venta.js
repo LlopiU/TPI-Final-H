@@ -12,7 +12,7 @@ const AgregarVenta = (props) => {
   const [idVenta, setIdVenta] = useState(0);
   const [total, setTotal] = useState(0);
   const [cantLineas, setCantLineas] = useState(
-    Array.apply(null, Array(30)).map(function () {})
+    Array.apply(null, Array(10)).map(function () {})
   );
   const { addVentas } = useAppContext();
   const [showAddVentas, setShowAddVentas] = addVentas;
@@ -98,27 +98,7 @@ const AgregarVenta = (props) => {
                     setCliente(e.target.value);
                   }}
                 />
-                {/* <span className="label popup-searchbar-label">
-                  <span>Ganancia:</span>
-                  <br></br>
-                </span>
-                <input
-                  type="text"
-                  placeholder="20%"
-                  className="popup-searchbar-input input agregar-venta-textinput"
-                  onChange={(e)=> {setGanancia(Number(e.target.value))}}
-                /> */}
               </div>
-              {/* <button
-                id="botonAgregarLineaVenta"
-                className="agregar-venta-btn-delete popup-addbutton btnRounded"
-              >
-                <img
-                  alt="image"
-                  src="/editar-white-1500h.png"
-                  className="popup-addbutton-img"
-                />
-              </button> */}
             </div>
             <div className="popup-list">
               <div className="agregar-venta-encabezado popup-list-header">
@@ -243,7 +223,7 @@ const AgregarVenta = (props) => {
             font-weight: 400;
             border-color: rgba(0, 0, 0, 0);
             border-width: 0px;
-            border-radius: 2rem;
+            border-radius: 3px;
             flex-direction: row;
             background-color: var(--dl-color-color-naranja);
           }

@@ -69,37 +69,13 @@ const ListaVentas = (props) => {
                 <span>VENTAS</span>
                 <br></br>
               </span>
-              <button 
-                className="lista-ventas-btn-delete btnRounded"
-                onClick={()=>{setShowAddVentas(true)}}
-              >
-                <img
-                  alt="image"
-                  src="/mas-1500h.png"
-                  className="lista-ventas-image"
-                />
-              </button>
             </div>
+            <a className="mt-8 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"  onClick={()=>{setShowAddVentas(true)}}>Agregar Ventas</a>
             <div className="lista-ventas-container4">
-              <button type="button" className="lista-ventas-button button"
-                onClick={()=>{setShowGenerarReporte(true)}}
-              >
-                {props.button}
-              </button>
+            <a className="mt-8 px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"  onClick={()=>{setShowGenerarReporte(true)}}>Reportes</a>
+              
             </div>
-            <div className="lista-ventas-container5">
-              <input
-                type="text"
-                placeholder="Buscar ID"
-                className="lista-ventas-textinput input"
-                onChange={handleChange}
-              />
-              <img
-                alt="image"
-                src="/buscar-grey-1500w.png"
-                className="lista-ventas-image1"
-              />
-            </div>
+
           </div>
           <div className="lista-ventas-encabezado">
             <div className="lista-ventas-container6">
@@ -175,8 +151,8 @@ const ListaVentas = (props) => {
             font-family: Poppins;
             font-weight: 600;
           }
-          .lista-ventas-btn-delete {
-            width: 3rem;
+          .lista-ventas-btn-add {
+            width: 10rem;
             height: 3rem;
             align-self: center;
             box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0);
@@ -184,16 +160,11 @@ const ListaVentas = (props) => {
             align-items: center;
             margin-left: 1rem;
             margin-right: 0rem;
-            border-radius: 2rem;
+            border-radius: 3px;
             background-color: var(--dl-color-color-naranja);
           }
-          .lista-ventas-btn-delete:hover {
+          .lista-ventas-btn-add:hover {
             transform: scale(1.05);
-          }
-          .lista-ventas-image {
-            width: 1.5rem;
-            height: 1.5rem;
-            object-fit: cover;
           }
           .lista-ventas-container4 {
             flex: 0 0 auto;
@@ -236,25 +207,6 @@ const ListaVentas = (props) => {
             border-radius: 3rem;
             justify-content: space-between;
           }
-          .lista-ventas-textinput {
-            width: 261px;
-            height: auto;
-            margin: 0rem;
-            font-size: 1.2rem;
-            align-self: center;
-            font-family: Poppins;
-            border-color: rgba(217, 217, 217, 0);
-            border-width: 0px;
-            background-color: transparent;
-          }
-          .lista-ventas-image1 {
-            width: 1.5rem;
-            height: auto;
-            align-self: center;
-            object-fit: cover;
-            margin-left: 1rem;
-            margin-right: 1rem;
-          }
           .lista-ventas-encabezado {
             flex: 0 0 auto;
             width: 100%;
@@ -267,8 +219,8 @@ const ListaVentas = (props) => {
             padding-bottom: 0rem;
             justify-content: space-between;
             background-color: var(--dl-color-gray-black);
-            border-top-left-radius: 2rem;
-            border-top-right-radius: 2rem;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
@@ -336,7 +288,7 @@ const ListaVentas = (props) => {
             display: flex;
             align-self: stretch;
             align-items: flex-end;
-            border-radius: 2rem;
+            border-radius: 5px;
             margin-bottom: 0rem;
             flex-direction: column;
             background-color: var(--dl-color-color-negro);
@@ -346,15 +298,6 @@ const ListaVentas = (props) => {
 
           @media (max-width: 1200px) {
             .lista-ventas-container2 {
-              align-self: stretch;
-            }
-            .lista-ventas-container4 {
-              justify-content: center;
-            }
-            .lista-ventas-button {
-              margin: 0rem;
-            }
-            .lista-ventas-textinput {
               align-self: stretch;
             }
             .lista-ventas-text2 {
@@ -375,13 +318,6 @@ const ListaVentas = (props) => {
             }
           }
           @media (max-width: 991px) {
-            .lista-ventas-button {
-              padding-top: 0.5rem;
-              padding-bottom: 0.5rem;
-            }
-            .lista-ventas-textinput {
-              width: 10rem;
-            }
             .lista-ventas-text2 {
               font-size: 1rem;
             }
@@ -402,32 +338,15 @@ const ListaVentas = (props) => {
             .lista-ventas-label {
               font-size: 1.5rem;
             }
-            .lista-ventas-btn-delete {
+            .lista-ventas-btn-add {
               width: 1.8rem;
               height: 1.8rem;
               margin-left: 0;
             }
-            .lista-ventas-image {
-              width: 1.2rem;
-              height: 1.2rem;
-            }
-            .lista-ventas-button {
-              height: auto;
-              font-size: 1rem;
-              text-align: center;
-              padding-top: 0.2rem;
-              padding-bottom: 0.2rem;
-            }
-            .lista-ventas-textinput {
-              width: 6rem;
-              font-size: 0.8rem;
-              padding-top: 0.2rem;
-              padding-bottom: 0.2rem;
-            }
             .lista-ventas-encabezado {
               height: 2rem;
-              border-top-left-radius: 1rem;
-              border-top-right-radius: 1rem;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
             }
             .lista-ventas-text2 {
               font-size: 0.8rem;
@@ -458,46 +377,16 @@ const ListaVentas = (props) => {
             .lista-ventas-label {
               font-size: 1.5rem;
             }
-            .lista-ventas-btn-delete {
+            .lista-ventas-btn-add {
               width: 1.5rem;
               height: 1.5rem;
               margin-left: 0.5rem;
             }
-            .lista-ventas-image {
-              width: 1rem;
-              height: 1rem;
-            }
-            .lista-ventas-button {
-              font-size: 0.85rem;
-              margin-left: 0rem;
-              padding-top: 0.2rem;
-              margin-right: 0rem;
-              padding-left: var(--dl-space-space-halfunit);
-              padding-right: 0.5rem;
-              padding-bottom: 0.2rem;
-            }
-            .lista-ventas-container5 {
-              justify-content: space-between;
-              align-items: center;
-            }
-            .lista-ventas-textinput {
-              width: 4rem;
-              font-size: 0.6rem;
-              padding-top: 0.2rem;
-              padding-left: 0.5rem;
-              padding-right: 0.5rem;
-              padding-bottom: 0.2rem;
-            }
-            .lista-ventas-image1 {
-              width: 1rem;
-              margin-left: 0.7rem;
-              margin-right: 0.7rem;
-            }
             .lista-ventas-encabezado {
               padding-left: 1rem;
               padding-right: 1rem;
-              border-top-left-radius: 1rem;
-              border-top-right-radius: 1rem;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 1px;
             }
             .lista-ventas-container6 {
               width: 90%;

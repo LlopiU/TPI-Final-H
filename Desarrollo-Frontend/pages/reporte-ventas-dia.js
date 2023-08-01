@@ -119,11 +119,13 @@ const ReporteVentasDia = (props) => {
               src="./Logo-reporte.png"
               className="reporte-logo h-16"
             />
-            <span className="reporte-fecha text-gray-600">{getFechaActual}</span>
+            <span className="reporte-fecha text-sm text-gray-800">
+              {getFechaActual()}
+            </span>
           </div>
           <div className="reporte-title mb-6">
-            <h1 className="reporte-title-h1 text-4xl font-bold mb-2 text-gray-800">
-              Reporte de ventas del día {dia}/{mes}/{anio}
+            <h1 className="reporte-title-h1 text-xl font-bold mb-2 text-gray-800">
+              Reporte de ventas del día {router.query.dia}/{router.query.mes}/{router.query.anio}
             </h1>
           </div>
           <div className="reporte-list">
@@ -146,13 +148,13 @@ const ReporteVentasDia = (props) => {
             </div>
           </div>
           <div className="reporte-totales mt-6">
-            <span className="text-total font-bold text-xl text-gray-800">
+            <span className="text-total font-bold text-lg text-gray-800">
               Total Vendido: ${totalVendido.toFixed(2)}
             </span>
-            <span className="text-total font-bold text-xl text-gray-800">
+            <span className="text-total font-bold text-lg text-gray-800">
               Costo mercadería vendida: ${costoMercaderia.toFixed(2)}
             </span>
-            <span className="reporte-ventas-text7 text-total font-bold text-xl text-gray-800">
+            <span className="reporte-ventas-text7 text-total font-bold text-lg text-gray-800">
               Margen de ganancia: ${margenGanancia.toFixed(2)}
             </span>
           </div>
@@ -160,6 +162,8 @@ const ReporteVentasDia = (props) => {
       </div>
     </>
   );
+  
+  
 };
 
 export default ReporteVentasDia;
