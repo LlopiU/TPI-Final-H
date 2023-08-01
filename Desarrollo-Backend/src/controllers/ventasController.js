@@ -173,6 +173,9 @@ const addLineaVenta = (req, res) => {
       res.status(201).send(`God`);
     }
   );
+  db.query(
+    "UPDATE productos SET stock = (stock - ?) WHERE id = ?", [cantidad, id_producto]
+  );
 };
 
 // Borrar una venta

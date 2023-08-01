@@ -10,6 +10,7 @@ const Compra = (props) => {
   const [showEliminarCompra, setShowEliminarCompra] = eliminarCompra;
   return (
     <>
+      
       <div className="compra-container list-item fila-tabla fila-grow"
         onClick={()=>{
           setShowEliminarCompra(-1);
@@ -43,6 +44,7 @@ const Compra = (props) => {
             className="compra-image"
           />
         </button>
+       
       </div>
       <style jsx>
         {`

@@ -10,6 +10,7 @@ const ReporteVentas = (props) => {
         <Head>
           <title>Reporte de ventas - Pedro's Bar</title>
           <meta property="og:title" content="Reporte-Ventas - TPI - Frontend" />
+          <link rel="icon" href="./Logo-reporte.png" type="image/x-icon" />
         </Head>
         <div className="reporte-main">
           <div className="reporte-header">

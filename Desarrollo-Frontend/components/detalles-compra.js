@@ -192,7 +192,7 @@ const DetallesCompra = (props) => {
             display: flex;
             padding: 2rem;
             align-self: center;
-            border-radius: 3rem;
+            border-radius: 5px;
             flex-direction: column;
             background-color: var(--dl-color-color-blanco);
             border-top-left-radius: 5px;
@@ -224,7 +224,7 @@ const DetallesCompra = (props) => {
             background-color: var(--dl-color-indigo-600);
           }
           .detalles-compra-text01 {
-            color: var(--dl-color-gray-white);
+            color: black;
             font-size: 1.2rem;
             align-self: center;
             margin-top: 0rem;
@@ -257,9 +257,10 @@ const DetallesCompra = (props) => {
           .detalles-compra-text09 {
             font-style: normal;
             font-weight: 700;
+            color:black;
           }
           .detalles-compra-text11 {
-            color: var(--dl-color-gray-white);
+            color:black;
             font-size: 1.2rem;
             align-self: center;
             margin-top: 0rem;
@@ -268,7 +269,7 @@ const DetallesCompra = (props) => {
             margin-right: 2rem;
           }
           .detalles-compra-text14 {
-            color: var(--dl-color-gray-white);
+            color:black;;
             width: auto;
             font-size: 1.2rem;
             align-self: center;
@@ -280,9 +281,10 @@ const DetallesCompra = (props) => {
           .detalles-compra-text15 {
             font-style: normal;
             font-weight: 700;
+            color:black;
           }
           .detalles-compra-text18 {
-            color: var(--dl-color-gray-white);
+            color:black;
             width: auto;
             font-size: 1.2rem;
             align-self: center;

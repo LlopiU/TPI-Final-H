@@ -111,6 +111,7 @@ const ReporteVentasDia = (props) => {
         <Head>
           <title>Reporte de ventas - Pedro's Bar</title>
           <meta property="og:title" content="Reporte-Ventas - TPI - Frontend" />
+          <link rel="icon" href="./Logo-reporte.png" type="image/x-icon" />
         </Head>
         <div className="reporte-main bg-white shadow-xl rounded-lg p-8 w-full max-w-4xl">
           <div className="reporte-header flex items-center justify-between mb-6">

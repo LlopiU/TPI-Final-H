@@ -23,7 +23,7 @@ const EliminarProducto = (props) => {
     <>
       <div className="confirmar-eliminar-container">
         <div className="confirmar-eliminar-container01">
-          <span className='confirmar-eliminar-text02'>¿Esta seguro?</span>
+          <span className='confirmar-eliminar-text02'>¿Desea eliminar Compra?</span>
           <button className="confirmar-eliminar-button button">
             <img
               src="/cerrar-white-1500h.png"
@@ -64,7 +64,7 @@ const EliminarProducto = (props) => {
             padding: 1rem;
             position: relative;
             max-width: 1000px;
-            border-radius: 3rem;
+            border-radius: 5px;
             flex-direction: row;
             background-color: var(--dl-color-gray-black);
           }
@@ -96,7 +96,7 @@ const EliminarProducto = (props) => {
             border-radius: var(--dl-radius-radius-round);
             flex-direction: row;
             padding-bottom: 1rem;
-            background-color: var(--dl-color-color-naranja);
+            background-color: black;
           }
           .confirmar-eliminar-button:hover {
             transform: scale(1.05);
@@ -121,7 +121,7 @@ const EliminarProducto = (props) => {
             border-radius: var(--dl-radius-radius-round);
             flex-direction: row;
             padding-bottom: 1rem;
-            background-color: var(--dl-color-color-naranja);
+            background-color: black;
           }
           .confirmar-eliminar-button1:hover {
             transform: scale(1.05);

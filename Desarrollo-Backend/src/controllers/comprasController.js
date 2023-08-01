@@ -95,9 +95,11 @@ const addLineaCompra = (req, res) => {
         res.status(500).json({ error: "Error" });
         return;
       }
-      //No estoy seguro d esto, pero el suyo no entiendo =D
       res.status(201).json({ mensaje: "Linea de Compra creada exitosamente" });
     }
+  );
+  db.query(
+    "UPDATE productos SET stock = (stock + ?) WHERE id = ?", [cantidad, id_producto]
   );
 };
 

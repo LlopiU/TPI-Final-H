@@ -6,6 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'image-opacity': "url('/fondo-imagen.png')",
+      }),
+      backgroundOpacity: {
+        '25': '0.25',
+        '50': '0.5',
+        '75': '0.75',
+      },
       fontFamily:{
         "playfair-display":['Playfair Display', 'serif']
       },

@@ -149,6 +149,7 @@ const DetallesProducto = (props) => {
             align-self: center;
             align-items: flex-start;
             flex-direction: column;
+           
           }
           .detalles-producto-text {
             color: var(--dl-color-gray-white);
@@ -184,7 +185,7 @@ const DetallesProducto = (props) => {
             display: flex;
             padding: 2rem;
             align-self: center;
-            border-radius: 3rem;
+            border-radius: 5px;
             flex-direction: column;
             padding-bottom: 2rem;
             background-color: var(--dl-color-color-blanco);
@@ -215,7 +216,7 @@ const DetallesProducto = (props) => {
             flex-direction: row;
             padding-bottom: 1rem;
             justify-content: flex-start;
-            background-color: var(--dl-color-color-naranja);
+            background-color: rgb(17 24 39);
           }
           .detalles-producto-text01 {
             color: var(--dl-color-gray-white);

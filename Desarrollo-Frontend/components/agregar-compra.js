@@ -74,7 +74,7 @@ const AgregarCompra = (props) => {
       <div className="agregar-compra-container">
         <div className="agregar-compra-container01">
           <div className="popup-header">
-            <span className="popup-header-title">AGREGAR COMPRA</span>
+            <span className="popup-header-title">Agregar Compra</span>
             <button type="button" className="agregar-compra-button button" onClick={()=>{setShowAddCompras(false)}}>
               <img
                 alt={props.image_alt3}
@@ -150,6 +150,7 @@ const AgregarCompra = (props) => {
               </div>
             </div>
             <div className="agregar-compra-container09">
+              
               <button
                 className="agregar-compra-button1 button"
                 onClick={() => {
@@ -158,7 +159,7 @@ const AgregarCompra = (props) => {
                   props.update();
                 }}
               >
-                <span className="agregar-compra-text07">GUARDAR</span>
+                <span className="agregar-compra-text07">Guardar</span>
               </button>
               <div className="popup-total agregar-compra-container10">
                 <span className="agregar-compra-text08">
@@ -226,7 +227,7 @@ const AgregarCompra = (props) => {
             height: auto;
             display: flex;
             padding: 2rem;
-            border-radius: 3rem;
+            border-radius: 5px;
             flex-direction: column;
             background-color: var(--dl-color-color-blanco);
             border-top-left-radius: 0;
@@ -329,9 +330,9 @@ const AgregarCompra = (props) => {
             font-weight: 400;
             border-color: rgba(0, 0, 0, 0);
             border-width: 0px;
-            border-radius: 2rem;
+            border-radius: 5px;
             flex-direction: row;
-            background-color: var(--dl-color-color-naranja);
+            background-color: rgb(17 24 39);
           }
           .agregar-compra-button1:hover {
             transform: scale(1.05);

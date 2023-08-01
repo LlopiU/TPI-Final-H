@@ -17,6 +17,8 @@ const Menu = (props) => {
         <Head>
           <title>Bienvenido a Pedro's Bar</title>
           <meta property="og:title" content="TPI - Frontend" />
+          <link rel="icon" href="./Logo-reporte.png" type="image/x-icon" />
+
         </Head>
         <Cabecera rootClassName="cabecera-root-class-name1"></Cabecera>
         

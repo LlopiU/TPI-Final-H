@@ -144,6 +144,8 @@ const ListaCompras = (props) => {
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 15px;
+
           }
           .lista-compras-label {
             color: var(--dl-color-gray-black);

@@ -67,7 +67,7 @@ const AgregarVenta = (props) => {
       <div className="agregar-venta-container">
         <div className="agregarVenta-main">
           <div className="popup-header">
-            <span className="popup-header-title">AGREGAR VENTA</span>
+            <span className="popup-header-title">Agregar Venta</span>
             <button
               type="button"
               className="popup-close-button button"
@@ -138,7 +138,7 @@ const AgregarVenta = (props) => {
                   props.update();
                 }}
               >
-                <span className="agregar-venta-text07">GUARDAR</span>
+                <span className="agregar-venta-text07">Guardar</span>
               </button>
               <div className="popup-total agregar-venta-container09">
                 <span className="agregar-venta-text08">
@@ -225,7 +225,7 @@ const AgregarVenta = (props) => {
             border-width: 0px;
             border-radius: 3px;
             flex-direction: row;
-            background-color: var(--dl-color-color-naranja);
+            background-color: rgb(17 24 39);
           }
           .agregar-venta-button1:hover {
             transform: scale(1.05);

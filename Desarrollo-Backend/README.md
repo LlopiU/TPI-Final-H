@@ -1,6 +1,6 @@
-# 2023-TPI-GF
+# 2023-TPI-GH
 
-Trabajo Práctico Integrador - Grupo F
+Trabajo Práctico Integrador - Grupo H
 
 Para instalar las dependencias necesarias, ejecutar en la terminal, desde la raiz:
 
