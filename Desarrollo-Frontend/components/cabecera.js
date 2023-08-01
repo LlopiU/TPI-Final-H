@@ -5,8 +5,10 @@ const Cabecera = () => {
   return (
     <>
       <nav className="menu">
-        <Link href="/" ><a>
-          <img src="../public/pedro_s.-logo.png" alt="logo" className="h-10 w-full" /></a>
+        <Link href="/" className="p-0" >
+          <a >
+          <img src="./pedro_s.-logo.png" alt="logo" className="h-10 w-full" />
+          </a>
         </Link>
         <ul className="items-center justify-end pr-8">
           <li className="pr-4">
