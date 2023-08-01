@@ -106,34 +106,31 @@ const ReporteVentasSem = (props) => {
 
   return (
     <>
-      <div className="reporte-ventas-container">
+      <div className="reporte-ventas-container bg-gradient-to-br from-gray-800 to-gray-900 min-h-screen flex items-center justify-center">
         <Head>
           <title>Reporte de ventas - Pedro's Bar</title>
           <meta property="og:title" content="Reporte-Ventas - TPI - Frontend" />
         </Head>
-        <div className="reporte-main">
-          <div className="reporte-header">
+        <div className="reporte-main bg-white shadow-xl rounded-lg p-8 w-full max-w-4xl">
+          <div className="reporte-header flex items-center justify-between mb-6">
             <img
-              alt="image"
-              src="/logo-1500w.png"
-              className="reporte-logo"
+              alt="Logo"
+              src="./Logo-reporte.png"
+              className="reporte-logo h-16"
             />
-            <span className="reporte-fecha">{getFechaActual()}</span>
+            <span className="reporte-fecha text-gray-600">{getFechaActual()}</span>
           </div>
-          <div className="reporte-title">
-            <br></br>
-            <h1 className="reporte-title-h1">Reporte de ventas de la semana {semana} del mes {mes}/{anio}</h1>
-            <br></br>
-            <br></br>
+          <div className="reporte-title mb-6">
+            <h1 className="reporte-title-h1 text-4xl font-bold mb-2 text-gray-800">
+              Reporte de ventas de la semana {semana} del mes {mes}/{anio}
+            </h1>
           </div>
           <div className="reporte-list">
-            <div className="reporte-list-header">
-              <div className="reporte-header-campos">
-                <span className="reporte-heading-id">ID</span>
-                <span className="reporte-heading-fecha">Fecha</span>
-                <span className="reporte-heading-cliente">Cliente</span>
-                <span className="reporte-heading-importe">Importe</span>
-              </div>
+            <div className="reporte-list-header grid grid-cols-4 gap-4 text-center font-bold mb-4">
+              <span className="text-gray-800">ID</span>
+              <span className="text-gray-800">Fecha</span>
+              <span className="text-gray-800">Cliente</span>
+              <span className="text-gray-800">Importe</span>
             </div>
             <div className="reporte-content">
               {ventas.map((venta, index) => (
@@ -147,33 +144,22 @@ const ReporteVentasSem = (props) => {
               ))}
             </div>
           </div>
-          <div className="reporte-totales">
-            <span className="text-total">Total Vendido: ${totalVendido.toFixed(2)}</span>
-            <span className="text-total">Costo mercadería vendida: ${costoMercaderia.toFixed(2)}</span>
-            <span className="reporte-ventas-text7 text-total">
+          <div className="reporte-totales mt-6">
+            <span className="text-total font-bold text-xl text-gray-800">
+              Total Vendido: ${totalVendido.toFixed(2)}
+            </span>
+            <span className="text-total font-bold text-xl text-gray-800">
+              Costo mercadería vendida: ${costoMercaderia.toFixed(2)}
+            </span>
+            <span className="reporte-ventas-text7 text-total font-bold text-xl text-gray-800">
               Margen de ganancia: ${margenGanancia.toFixed(2)}
             </span>
           </div>
         </div>
       </div>
-      <style jsx>
-        {`
-          .reporte-ventas-container {
-            width: 100%;
-            display: flex;
-            overflow: auto;
-            min-height: 100vh;
-            align-items: center;
-            flex-direction: column;
-          }
-          .reporte-ventas-text7 {
-            font-style: normal;
-            font-weight: 600;
-          }
-        `}
-      </style>
     </>
   );
+  
 };
 
 export default ReporteVentasSem;
