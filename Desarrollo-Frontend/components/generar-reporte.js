@@ -327,12 +327,12 @@ const GenerarReporte = (props) => {
             align-items: center;
             margin-left: 0px;
             margin-right: 0px;
-            border-radius: 0px;
+            border-radius: 5px;
             flex-direction: column;
             justify-content: flex-start;
             background-color: var(--dl-color-color-blanco);
-            border-bottom-left-radius: 3rem;
-            border-bottom-right-radius: 3rem;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
           }
           .generar-reporte-container4 {
             flex: 0 0 auto;
@@ -362,7 +362,7 @@ const GenerarReporte = (props) => {
             border-width: 1px;
             margin-right: 0px;
             padding-left: 1rem;
-            border-radius: 2rem;
+            border-radius: 5px;
             padding-right: 0.5rem;
             padding-bottom: 0.5rem;
           }
@@ -392,7 +392,7 @@ const GenerarReporte = (props) => {
             font-family: Poppins;
             border-color: var(--dl-color-gray-700);
             border-width: 1px;
-            border-radius: 2rem;
+            border-radius: 5px;
           }
           .generar-reporte-textinput1 {
             height: auto;
@@ -405,7 +405,7 @@ const GenerarReporte = (props) => {
             border-color: var(--dl-color-gray-700);
             border-width: 1px;
             margin-right: 0.75rem;
-            border-radius: 2rem;
+            border-radius: 5px;
           }
           .generar-reporte-textinput2 {
             height: auto;
@@ -416,7 +416,7 @@ const GenerarReporte = (props) => {
             font-family: Poppins;
             border-color: var(--dl-color-gray-700);
             border-width: 1px;
-            border-radius: 2rem;
+            border-radius: 5px;
           }
           .generar-reporte-button1 {
             color: var(--dl-color-gray-white);
@@ -430,11 +430,11 @@ const GenerarReporte = (props) => {
             padding-top: 1rem;
             border-width: 0px;
             padding-left: 1.2rem;
-            border-radius: 2rem;
+            border-radius: 5px;
             padding-right: 1.2rem;
             flex-direction: row;
             padding-bottom: 1rem;
-            background-color: var(--dl-color-color-naranja);
+            background-color: black;
           }
           .generar-reporte-button1:hover {
             transform: scale(1.05);
